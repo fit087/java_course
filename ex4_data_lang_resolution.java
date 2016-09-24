@@ -24,16 +24,21 @@ public class HoraDoSistema {
         Date relogio = new Date();
         System.out.println("A hora eh:");
         System.out.println(relogio.toString());
+        
+        // Create an object that it contains the Screen size
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         System.out.print("Resolucion ");
+        
         double ancho = screenSize.getWidth();
         double alto = screenSize.getHeight();
         System.out.print(ancho);
         System.out.print("x");
         System.out.println(alto);
         
-        Locale local = Locale.getDefault();
+        Locale local = Locale.getDefault();   
         //String cadena = local.getLanguage();
+        
+        // Take the languages of the system
         String cadena = local.getDisplayLanguage();
         System.out.print("O sistema esta em ");
         System.out.println(cadena);
